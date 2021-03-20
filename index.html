@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="" />
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand">
+        <h1>Darklight Web Form</h1>
+      </div>
+      <div class="wrapper animate__animated animate__bounceInLeft">
+        <div class="company-info">
+          <h3>Darklight Enterprise</h3>
+          <ul>
+            <li>1 Somewhere in Africa</li>
+            <li>(123)-333-666-76488</li>
+            <li>example@email.com</li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h2>Email us</h2>
+
+          <div class="sucMesg">Your Message has been sent.</div>
+          <form id="contactForm">
+            <p>
+              <label for="Name">Name:</label>
+              <input type="text" name="" id="name" required />
+            </p>
+
+            <p>
+              <label for="Email">Email:</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+
+            <p>
+              <label for="Phone number">Phone:</label>
+              <input type="text" name="Phone number" id="phone" required />
+            </p>
+
+            <p>
+              <label for="Company Name: ">company:</label>
+              <input type="text" name="Company name" id="company" required />
+            </p>
+
+            <p class="full">
+              <label for="message">message:</label>
+              <textarea name="message" id="message" rows="5"></textarea>
+            </p>
+
+            <p class="full">
+              <button type="submit" id="btn">submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <button class="testBtn" id="rollBack">Go Back</button>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

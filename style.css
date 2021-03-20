@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #858F8A;
+  color: #FFEDC4;
+  line-height: 1.6;
+  padding: 1em;
+  
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.brand > h1 {
+  text-align: center;
+  font-family: Times New Roman;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  max-width: auto;
+  max-height: auto;
+}
+.wrapper > * {
+  padding: 1em;
+}
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.company-info{
+  background-color: #FFB4B2;
+}
+
+.contact-info form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.contact-info form label {
+  display: block;
+}
+form  input{
+  width: 100%;
+}
+.contact-info form .full{
+  grid-column: 1 / 3;
+}
+.contact-info textarea, .contact-info button {
+  width: 100%;
+}
+
+button{
+  text-align: center;
+  border: none;
+  background-color: #FFB4B2;
+  height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact-info button:hover, .contact-info button:focus {
+  background: rgba(72,94,112,0.5);
+  color: #fff;
+  outline: 0;
+ /* transition: background-color 1s ease-out;*/
+}
+.sucMesg {
+  text-align: center;
+  background-color: #4bfc1f;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.testBtn {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media(min-width:700px){
+  .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .company-info h3, .company-info ul, .brand h1 {
+    text-align: left;
+  }
+}
